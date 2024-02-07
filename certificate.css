@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pagewrapper {
+    display: flex;
+    color: rgb(172, 158, 4);
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+}
