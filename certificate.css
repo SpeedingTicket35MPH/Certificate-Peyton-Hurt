@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    color: black;
 }
 
 * {
@@ -9,10 +8,63 @@ body {
 
 .pagewrapper {
     display: flex;
-    color: rgb(172, 158, 4);
+    height: 100vh;
 }
 
-.right{
-    display: flex;
-    justify-content: center;
+.left{
+    width: 75vw;
+    padding: 1em;
 }
+
+.right {
+    width: 25vw;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+.number1 {
+    color: red;
+}
+
+.number2 {
+    color: blue
+}
+
+.number3 {
+    color: blueviolet;
+}
+
+.number4 {
+    color: orange;
+}
+
+@media print{
+    .right{
+        display: none;
+    }
+}
+
+.thingy{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20%;
+}
+
+.blas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20%;
+  
+}
+
+.shotgun{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20%;
+  }
