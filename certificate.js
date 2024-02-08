@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById('type').addEventListener('change', function (eventData) {
       let nameOutput = document.getElementById('nameOutput');
-      // console.log(eventData);
+      console.log(eventData);
       let info = document.getElementById('info');
       info.innerText = eventData.target.value;
       changeCert(eventData.target.value);
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // process form Data
   document.getElementById("myForm").addEventListener("submit", function (eventData) {
-      eventData.preventDefault(); //stop page reload when form is submitted
+      e.preventDefault(); //stop page reload when form is submitted
       console.log(eventData.target);
       var formData = new FormData(eventData.target);
       formData = Object.fromEntries(formData);
@@ -60,9 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
           case 'C':
               certificate.classList.add('number3');
           break;
-          case 'D':
-              certificate.classList.add('number4');
-          break;
+ 
       }
   }
 });

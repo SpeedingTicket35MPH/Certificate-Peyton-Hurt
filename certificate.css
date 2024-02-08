@@ -23,48 +23,31 @@ body {
 }
 
 .number1 {
-    color: red;
+background-image: url("ironmaiden.png");
+height: 100vh;
 }
 
 .number2 {
-    color: blue
+ background-image: url("kurtcobain.png");
+ height: 100vh;
 }
 
 .number3 {
-    color: blueviolet;
+background-image: url(balding.png);
+
 }
 
-.number4 {
-    color: orange;
+.certificate{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    
 }
-
 @media print{
     .right{
         display: none;
     }
 }
 
-.thingy{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 20%;
-}
 
-.blas{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20%;
-  
-}
 
-.shotgun{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20%;
-  }
