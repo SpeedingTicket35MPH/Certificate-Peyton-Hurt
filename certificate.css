@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 
@@ -15,7 +14,7 @@ body {
     height: 100vh;
 }
 
-.left{
+.left {
     width: 75vw;
     padding: 1em;
 }
@@ -26,54 +25,87 @@ body {
     padding: 1em;
 }
 
-.number1 {
+/* .number1 {
 background-image: url("ironmaiden.png");
 height: 100vh;
-display: flex;
-justify-content: center;
+
 }
 
 .number2 {
  background-image: url("kurtcobain.png");
  height: 100vh;
- width: 5000px;
- display: flex;
- background-repeat: no-repeat;
- position: absolute;
-text-align: center;
+ width: 100%;
 }
 
 .number3 {
 background-image: url("dgjfelp;'lkfdl;grel.png");
 height: 1000vh;
-width: 50000px;
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-position: absolute;
-}
+width: 100%;
+} */
 
-.certificate{
+#certificate {
+
     display: flex;
     justify-content: center;
     height: fit-content;
     position: relative;
-    
+
 }
 
-.typename{
-    display: flex;
-    justify-content: center;
+#certificate img {
+    display: none;
+    width: 100%;
+
+}
+
+#certificate.number1 img.maiden {
+    display: block;
+}
+
+#certificate.number2 img.kurt {
+    display: block;
+}
+
+#certificate.number3 img.balding {
+    display: block;
+}
+
+#nameOutput {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    width: 64%;
     text-align: center;
+    font-size: 6em;
+    font-weight: bold;
 
 }
 
+#certificate.number2 #nameOutput {
+    top: 24%;
+    left: 20%;
+    width: 64%;
+}
 
-@media print{
-    .right{
+#certificate.number3 #nameOutput {
+    top: 35%;
+    left: 20%;
+    width: 64%;
+}
+
+#theDate{
+    position: absolute;
+    left: 35%;
+    top: 61%;
+    z-index: 1;
+}
+
+@media print {
+    .right {
         display: none;
     }
+
+    .left {
+        width: 100%;;
+    }
 }
-
-
-

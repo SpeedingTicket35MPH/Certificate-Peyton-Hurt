@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.getElementById('type').addEventListener('change', function (eventData) {
-      let nameOutput = document.getElementById('nameOutput');
-      console.log(eventData);
-      let info = document.getElementById('info');
-      info.innerText = eventData.target.value;
+    //   let nameOutput = document.getElementById('nameOutput');
+    //   console.log(eventData);
+    //   let info = document.getElementById('info');
+    //   info.innerText = eventData.target.value;
       changeCert(eventData.target.value);
   });
 
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //update certificate information when form is submitted:
       let nameOutput = document.getElementById('nameOutput');
-      let info = document.getElementById('info');
+    //   let info = document.getElementById('info');
       nameOutput.innerText = formData.name;
-      info.innerText = formData.type;
+    //   info.innerText = formData.type;
 
     });
   // Log readiness to console
@@ -62,8 +62,26 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
  
       }
-  }
-});
+
+  }       // Adding a button to print the certificate
+  // setup print event listener
+  if ( document.getElementById('print') !== null) {
+      let printElement = document.getElementById('print');
+      printElement.addEventListener('click', function(e){
+      window.print();
+      console.log("invoke print");
+      } );
+  } // or in html -> onclick="window.print()"
+
+  // Generating a date
+  let theDate = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"numeric", day:"numeric"}) 
+  // Makes a format like: "Friday, Jul 2, 2021"
+  let dateBox = document.getElementById('theDate');
+  dateBox.innerText = theDate;
+;
+}
+
+);
 
 
 
